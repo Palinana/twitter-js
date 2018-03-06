@@ -8,15 +8,20 @@
   <div class="row">
     <div class="col-md-3">
       <img src="http://www.projectq.us/images/uploads/1c__archway_ryan-gosling-sexy-pics.jpg"><br>
-      <b>Your Name</b><br>
-      100 followers
+      <b>Ry Ry</b><br>
+      200 followers
     </div>
     <div class="col-md-9">
     
       <!-- display tweets here -->
       {% for tweet in tweets %}
-      <li>{{tweet.content}, {tweets.name}}</li>    
+      <li><img  id ='ryan'src="https://i.ebayimg.com/images/g/xvEAAOSwB09YG6wr/s-l300.jpg"></li>
+      <li>{{tweet.name}}</li>
+      <li>{{tweet.content}}</li>   
+
       {% endfor %}
+
+     
       
     </div>
   </div>
