@@ -3,6 +3,9 @@ const app = express();
 const nunjucks = require('nunjucks');
 const morgan = require('morgan');
 const routes = require('./routes');
+let path = require('path');
+
+app.use(express.static(path.join(__dirname, './public')));
 
 
 nunjucks.configure('views', {
