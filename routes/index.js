@@ -32,7 +32,7 @@ module.exports = function makeRouterWithSockets (io) {
 
   // single-tweet page
   router.get('/tweets/:id', function(req, res, next) {
-    var tweetsWithThatId = tweetBank.find({ id: Number(req.params.id) });
+    var tweetsWithThatId = tweetBank.find({ id: Number(req.params.id) }); //Number to coorse the string to a number! (u could also use '+')
     res.render('index', {
       title: 'Twitter.js',
       tweets: tweetsWithThatId // an array of only one element ;-)
