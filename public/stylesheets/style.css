@@ -1,8 +1,6 @@
 html,
 body {
   height: 100%;
-  color: goldenrod !important;
-
   /* The html and body elements cannot have any padding or margin. */
 }
 
@@ -59,16 +57,3 @@ code {
 .content .by {
   font-weight: bold;
 }
-li {
-  margin: 20px 0px;
-  list-style: none;
-  }
-
-  img {
-    height: 50px;
-    width: 75px;
-  }
-  #ryan {
-    height: 75px;
-    width: 65px
-  }
