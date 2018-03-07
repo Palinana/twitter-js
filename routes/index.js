@@ -40,6 +40,16 @@ module.exports = function makeRouterWithSockets (io) {
   });
 
   // create a new tweet
+
+  //***** POST route before using io.socket */
+  // router.post('/tweets', (req, res, next) =>  {
+  //   tweetBank.add(req.body.name, req.body.text);
+  //   res.redirect('/') //this redirect reaload the page and adds the tweet to the main page(original page we hit when we frst go to the twitter page), the reload happens very quickly so it's barely noticible
+  // });
+  //************* */
+
+
+
   router.post('/tweets', (req, res, next) =>  {
     let newTweet = tweetBank.add(req.body.name, req.body.text);
     io.sockets.emit('new_tweet', newTweet);
