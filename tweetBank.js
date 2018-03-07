@@ -4,7 +4,7 @@ var _ = require('lodash');
 var data = [];
 
 function add (name, text) {
-  data.push({ name: name, text: text, id: data.length });
+  data.push({ name: name, text: text, id: data.length }); //create an id for the specific tweets(id: data.length)
   return _.clone(data[data.length - 1]);
 }
 

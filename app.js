@@ -6,7 +6,6 @@ var nunjucks = require('nunjucks');
 var makesRouter = require('./routes');
 var fs = require('fs');
 var path = require('path');
-var mime = require('mime');
 var bodyParser = require('body-parser');
 var socketio = require('socket.io');
 
